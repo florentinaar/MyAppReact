@@ -9,7 +9,7 @@ function Contact(){
         alert(`name: ${name}`)
     }
     const StyledDiv= styled.div`
-  padding:3em;
+  padding:7em;
   font-size:20px;
   text-transform:capitalize;
   background-color:#80808026;
