@@ -14,6 +14,7 @@ const Layout = ()=> {
           <Navbar.Brand href="/home">myApp</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/home">Home</Nav.Link>
+            <Nav.Link href="/orders">Orders</Nav.Link>
             <Nav.Link href="/ticket">Ticket</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
     
