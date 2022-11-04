@@ -11,6 +11,7 @@ import Contact from './pages/Contact';
 import NoPage from './pages/NoPage';
 import Footer from './pages/Footer';
 import ProductList from './pages/ProductList';
+import Login from './pages/Login';
 
 // const StyledDiv= styled.div`
 //   padding:2%;
@@ -34,6 +35,7 @@ function App() {
       <Route path="ticket" index element={<Ticket />}/>
       <Route  path="contact" element={<Contact />}/>
       <Route  path="orders" element={<Orders />}/>
+      <Route  path="login" element={<Login />}/>
       <Route  path="productlist" element={<ProductList />}/>
       <Route path="*"   element={<NoPage />}/>
       </Route>

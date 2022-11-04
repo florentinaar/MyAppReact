@@ -11,12 +11,13 @@ const Layout = ()=> {
         <>
         <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="/home">myApp</Navbar.Brand>
+          <Navbar.Brand href="/home">OnlinePost</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/orders">Orders</Nav.Link>
             <Nav.Link href="/ticket">Ticket</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link href="/login">Login</Nav.Link>
     
           </Nav>
         </Container>

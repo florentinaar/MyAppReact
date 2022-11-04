@@ -3,14 +3,14 @@ import Carousel from 'react-bootstrap/Carousel';
 function Services() {
   const slider = [{
     id:1,
-    src:'/assets/img/1.jpg',
-    title:'top quality pens',
+    src:'/assets/img/c2.jpeg',
+    title:'top orders',
     description:'Nulla vitae elit libero, a pharetra augue mollis interdum'
   }
 ,{
   id:1,
-  src:'/assets/img/2.jpg',
-  title:'top quality pens',
+  src:'/assets/img/courier.jpeg',
+  title:'top orders',
   description:'Nulla vitae elit libero, a pharetra augue mollis interdum'
 }
 ]
