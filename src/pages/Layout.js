@@ -9,7 +9,7 @@ import {Outlet, Link }from 'react-router-dom';
 const Layout = ()=> {
     return (
         <>
-        <Navbar bg="dark" variant="dark">
+        <Navbar   style={{ color: 'green',backgroundColor: '#f5faf5' }}>
         <Container>
           <Navbar.Brand href="/home">OnlinePost</Navbar.Brand>
           <Nav className="me-auto">
@@ -18,6 +18,7 @@ const Layout = ()=> {
             <Nav.Link href="/ticket">Ticket</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
             <Nav.Link href="/login">Login</Nav.Link>
+            <Nav.Link href="/services">Services</Nav.Link>
     
           </Nav>
         </Container>

@@ -12,6 +12,7 @@ import NoPage from './pages/NoPage';
 import Footer from './pages/Footer';
 import ProductList from './pages/ProductList';
 import Login from './pages/Login';
+import Services from './pages/Services';
 
 // const StyledDiv= styled.div`
 //   padding:2%;
@@ -28,18 +29,19 @@ import Login from './pages/Login';
 function App() {
   return (
     <BrowserRouter>
+    <Layout />
     <Routes>
-      <Route path="/"  element={<Layout />}>
-      <Route path="/"  element={<Footer />}/>
+      <Route path="/"  element={<Home/>}/>
       <Route path="home" index element={<Home />}/>
       <Route path="ticket" index element={<Ticket />}/>
       <Route  path="contact" element={<Contact />}/>
       <Route  path="orders" element={<Orders />}/>
       <Route  path="login" element={<Login />}/>
+      <Route  path="services" element={<Services />}/>
       <Route  path="productlist" element={<ProductList />}/>
       <Route path="*"   element={<NoPage />}/>
-      </Route>
     </Routes>
+    <Footer />
     </BrowserRouter>
   //  <StyledDiv>
   //   <StyledP>

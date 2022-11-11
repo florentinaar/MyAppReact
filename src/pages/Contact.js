@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Services from "./Services";
+import Carousel from "./Carousel";
 import styled from 'styled-components';
 
 function Contact(){
@@ -12,25 +12,25 @@ function Contact(){
   padding:7em;
   font-size:20px;
   text-transform:capitalize;
-  background-color:#80808026;
+  background-color:#f5faf5;
 `
 const StyledP= styled.p`
 
   font-size:30px;
-  color:Black;
+  color:green !important;
 `
 
     return (
-        <><Services/>
+        <><Carousel/>
         <StyledDiv>
         <form onSubmit={handleSubmit}>
-            <label>Enter your name:
+            <label className="greenTxt">Enter your name: 
                 <input 
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}/>
             </label>
-            <input type="submit"/>
+            <input className="green" type="submit"/>
         </form>
         </StyledDiv>
       

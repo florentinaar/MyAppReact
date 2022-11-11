@@ -2,6 +2,9 @@ import React, { Component, useDebugValue, useEffect, useState } from 'react';
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 import ProductList from '../pages/ProductList';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 const Orders =() => {
     const [orders, setOrders] = useState();
     const api = async () => {
@@ -16,15 +19,16 @@ const Orders =() => {
         // 👇️ navigate to /
         navigate('/ProductList');
       };
-    return (
-                    
-        <Table striped bordered hover variant="dark">
+    return (<>
+      <h1 style={{  marginTop:'5%',marginBottom:'5%', textAlign:'center' ,color: 'green'}}>All Orders</h1>
+      <Container  style={{  marginTop:'5%',marginBottom:'10%'}}>   
+        <Table striped bordered hover variant="white">
             <thead>
             <tr>
-                <th>First Name</th>
+            <th>Email</th>
                 <th>date</th>
                 <th>status</th>
-                <th>Email</th>
+               
                 <th>Phone</th>
                 <th>Price</th>
                 <th>Product</th>
@@ -34,10 +38,9 @@ const Orders =() => {
       <tbody>
       {  orders && orders.map((t)=>(    
         <tr key={t.orderId}>
-          <td>Mark</td>
+          <td>{t.email}</td>
           <td>{t.date}</td>
           <td>{t.status}</td>
-          <td>{t.Email}</td>
           <td>{t.phone}</td>
           <td> {t.price}</td>
           <td> 
@@ -45,14 +48,15 @@ const Orders =() => {
             <p>{products.name}</p>
           ))}
           </td>
-          <td ><Button variant="warning" onClick={navigate}>View Product list</Button>{' '}</td>
+          <td ><Button variant="success" onClick={navigate}>View Product list</Button>{' '}</td>
         </tr>
          ) )};
 
       </tbody>
     </Table>
+    </Container>
                
-        
+    </>
 );}
 
 export default Orders;

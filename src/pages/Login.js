@@ -12,7 +12,8 @@ const Login = () => {
         event.preventDefault();
         alert(inputs);
     }
-    return (
+    return (<>
+        <p class="loginTxt">Login in our page</p>
         <form onSubmit={handleSubmit}>
             <label>Enter your name:
                 <input
@@ -32,6 +33,7 @@ const Login = () => {
             </label>
             <input type="submit"/>
         </form>
+        </>
     )
 };
 export default Login;
