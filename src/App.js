@@ -12,6 +12,7 @@ import NoPage from './pages/NoPage';
 import Footer from './pages/Footer';
 import ProductList from './pages/ProductList';
 import Login from './pages/Login';
+import About from './pages/About';
 import Services from './pages/Services';
 
 // const StyledDiv= styled.div`
@@ -37,6 +38,7 @@ function App() {
       <Route  path="contact" element={<Contact />}/>
       <Route  path="orders" element={<Orders />}/>
       <Route  path="login" element={<Login />}/>
+      <Route  path="about" element={<About />}/>
       <Route  path="services" element={<Services />}/>
       <Route  path="productlist" element={<ProductList />}/>
       <Route path="*"   element={<NoPage />}/>
