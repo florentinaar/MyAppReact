@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Ticket from './pages/Ticket';
 import Orders from './pages/Orders';
 import Contact from './pages/Contact';
+import ContactUs from './pages/ContactUs';
 import NoPage from './pages/NoPage';
 import Footer from './pages/Footer';
 import ProductList from './pages/ProductList';
@@ -36,6 +37,7 @@ function App() {
       <Route path="home" index element={<Home />}/>
       <Route path="ticket" index element={<Ticket />}/>
       <Route  path="contact" element={<Contact />}/>
+      <Route  path="contactUs" element={<ContactUs />}/>
       <Route  path="orders" element={<Orders />}/>
       <Route  path="login" element={<Login />}/>
       <Route  path="about" element={<About />}/>

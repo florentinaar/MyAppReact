@@ -72,3 +72,33 @@ form {
   color: green;
   text-transform: capitalize;
 } 
+.label{
+  font-size: 22px;
+  display: block;
+  text-transform: capitalize;
+}
+.title{
+  text-align: center;
+}
+.field{
+  width: inherit;
+  border: none;
+  border-bottom:1px solid rgb(191, 218, 179);
+}
+.input {
+  width: 22em;
+  padding: 1em;
+}
+.Form{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.button{
+  margin-top: 1em;
+  border: none;
+  color: white;
+  background-color:green ;
+  border-radius: 3px;
+  padding: 0.3em 0.5em;
+}
