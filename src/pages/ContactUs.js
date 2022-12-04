@@ -5,17 +5,17 @@ import * as Yup from 'yup';
 import ReactDOM from 'react-dom';
 import ReCAPTCHA from "react-google-recaptcha";
 
-function onChange(value) {
-    console.log("Captcha value:", value);
-  }
+// function onChange(value) {
+//     console.log("Captcha value:", value);
+//   }
    
-  ReactDOM.render(
-    <ReCAPTCHA
-      sitekey="6LelFjUjAAAAAMIVsWflzrq5J43d7voU4BFa_Xqa"
-      onChange={onChange}
-    />,
-    document.body
-  );
+  // ReactDOM.render(
+  //   <ReCAPTCHA
+  //     sitekey="6LelFjUjAAAAAMIVsWflzrq5J43d7voU4BFa_Xqa"
+  //     onChange={onChange}
+  //   />,
+  //   document.body
+  // );
 const SignupSchema = Yup.object().shape({
   firstName: Yup.string()
     .min(2, 'Too Short!')
