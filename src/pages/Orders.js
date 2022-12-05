@@ -26,9 +26,6 @@ const Orders =() => {
             <thead>
             <tr>
             <th>Email</th>
-                <th>date</th>
-                <th>status</th>
-               
                 <th>Phone</th>
                 <th>Price</th>
                 <th>Product</th>
@@ -39,8 +36,6 @@ const Orders =() => {
       {  orders && orders.map((t)=>(    
         <tr key={t.orderId}>
           <td>{t.email}</td>
-          <td>{t.date}</td>
-          <td>{t.status}</td>
           <td>{t.phone}</td>
           <td> {t.price}</td>
           <td> 

@@ -102,3 +102,33 @@ form {
   border-radius: 3px;
   padding: 0.3em 0.5em;
 }
+.styled-div{
+  padding:7em;
+  font-size:20px;
+  text-transform:capitalize;
+  background-color:#80808026;
+}
+.styled-p{
+  padding:0.5em;
+font-size:3em;
+text-align:center;
+text-transform:capitalize;
+color:white;
+}
+
+
+@media (max-width: 480px) {
+  .styled-div{
+    padding:5em;
+    font-size:20px;
+    text-transform:capitalize;
+    background-color:#80808026;
+  }
+  .styled-p{
+    padding:0.2em;
+  font-size:2em;
+  text-align:center;
+  text-transform:capitalize;
+  color:white;
+  }
+}
