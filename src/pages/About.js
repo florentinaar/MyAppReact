@@ -5,7 +5,9 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import { Player } from 'video-react';
 import './aboutStyle.css'
-//import "node_modules/video-react/dist/video-react.css"
+import "video-react/dist/video-react.css";
+
+
 const About = () => {
     const [persons, setPersons] = useState();
     const options = {
@@ -32,15 +34,10 @@ const About = () => {
             <h1 className='heading'>Our Staff</h1>
             <Player
       playsInline
-      poster="/assets/poster.png"
-      src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-    />
-     {/* <video controls width="100%">
-      <source src="/https://media.w3.org/2010/05/sintel/trailer_hd.mp4" type="video/webm" />
-      <source src="/https://media.w3.org/2010/05/sintel/trailer_hd.mp4" type="video/mp4"
-      />
-      Sorry, your browser doesn't support videos.
-    </video> */}
+      poster=""
+    >
+      <source src="https://pic.pikbest.com/00/88/74/54D888piCai4.mp4" type="video/mp4" />
+    </Player>
             <Container>
       <Row>
       { persons &&  persons.map((t)=>(  
